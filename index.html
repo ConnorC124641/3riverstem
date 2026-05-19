@@ -12,117 +12,125 @@
                     colors: {
                         brandNavy: '#0F2C59',
                         brandOrange: '#FF4500',
+                        brandOrangeHover: '#E03D00',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
-    <header class="bg-white border-b-4 border-brandOrange py-12 px-4 text-center shadow-sm">
-        <div class="max-w-4xl mx-auto">
-            <p class="text-brandOrange font-bold tracking-widest text-lg uppercase mb-2">— Three Rivers STEM & Beyond —</p>
-            <h1 class="text-5xl md:text-6xl font-black text-brandNavy tracking-tight mb-4">
+    <header class="bg-white border-b-4 border-brandOrange py-16 px-4 text-center shadow-sm relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.02] pointer-events-none bg-[radial-gradient(#0F2C59_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <p class="text-brandOrange font-bold tracking-widest text-sm md:text-base uppercase mb-3">— Three Rivers STEM & Beyond —</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-brandNavy tracking-tight mb-6 leading-tight">
                 STEM <span class="text-brandOrange">AND</span> CHESS ENRICHMENT
             </h1>
-            <div class="bg-brandNavy text-white py-3 px-6 inline-block font-extrabold text-xl md:text-2xl uppercase tracking-wider rounded shadow-md mb-6">
+            <div class="bg-brandNavy text-white py-2.5 px-8 inline-block font-bold text-lg md:text-xl uppercase tracking-wider rounded-lg shadow-md mb-8">
                 Information Session
             </div>
             
-            <div class="flex justify-center space-x-4 md:space-x-8 text-sm md:text-base font-bold text-brandNavy uppercase tracking-widest mb-8">
-                <span>Explore</span> • <span class="text-brandOrange">Learn</span> • <span>Compete</span> • <span class="text-brandOrange">Grow</span>
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-bold text-brandNavy uppercase tracking-widest mb-8">
+                <span>Explore</span> <span class="text-brandOrange/40">•</span> <span>Learn</span> <span class="text-brandOrange/40">•</span> <span>Compete</span> <span class="text-brandOrange/40">•</span> <span>Grow</span>
             </div>
 
-            <p class="text-lg md:text-xl text-brandNavy font-semibold max-w-2xl mx-auto leading-relaxed">
-                Discover exciting STEM and Chess opportunities and resources for <span class="text-brandOrange font-bold">K–8th grade</span> students!
+            <p class="text-lg md:text-xl text-brandNavy font-medium max-w-2xl mx-auto leading-relaxed">
+                Discover exciting STEM and Chess opportunities and resources for <span class="text-brandOrange font-bold border-b-2 border-brandOrange/20 pb-0.5">K–8th grade</span> students!
             </p>
-            <p class="text-xs text-gray-500 italic mt-3">Inspired by JAFLEZ Math & Chess</p>
+            <p class="text-xs text-slate-400 italic mt-4 tracking-wide">Inspired by JAFLEZ Math & Chess</p>
         </div>
     </header>
 
-    <section class="py-12 bg-gray-100 px-4">
+    <section class="py-16 bg-slate-100/60 px-4">
         <div class="max-w-5xl mx-auto">
-            <h2 class="bg-brandOrange text-white text-center font-bold tracking-wider py-2 px-4 rounded-t-lg text-lg uppercase">
+            <h2 class="bg-brandOrange text-white text-center font-bold tracking-wider py-3 px-4 rounded-t-xl text-sm sm:text-base uppercase shadow-sm">
                 Topics Include:
             </h2>
-            <div class="bg-white border-2 border-t-0 border-brandOrange rounded-b-lg p-8 grid grid-cols-2 md:grid-cols-5 gap-6 text-center shadow-md">
-                <div class="p-4 flex flex-col items-center">
-                    <i class="fa-solid fa-calculator text-brandOrange text-4xl mb-3"></i>
-                    <p class="font-bold text-brandNavy text-sm">Math Competitions</p>
+            <div class="bg-white border-2 border-t-0 border-brandOrange rounded-b-xl p-6 sm:p-8 grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-5 text-center shadow-md">
+                <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                    <i class="fa-solid fa-calculator text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-bold text-brandNavy text-xs sm:text-sm">Math Competitions</p>
                 </div>
-                <div class="p-4 flex flex-col items-center">
-                    <i class="fa-solid fa-code text-brandOrange text-4xl mb-3"></i>
-                    <p class="font-bold text-brandNavy text-sm">Coding</p>
+                <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                    <i class="fa-solid fa-code text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-bold text-brandNavy text-xs sm:text-sm">Coding</p>
                 </div>
-                <div class="p-4 flex flex-col items-center">
-                    <i class="fa-solid fa-flask text-brandOrange text-4xl mb-3"></i>
-                    <p class="font-bold text-brandNavy text-sm">Science Competitions</p>
+                <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                    <i class="fa-solid fa-flask text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-bold text-brandNavy text-xs sm:text-sm">Science Competitions</p>
                 </div>
-                <div class="p-4 flex flex-col items-center">
-                    <i class="fa-solid fa-chess-knight text-brandOrange text-4xl mb-3"></i>
-                    <p class="font-bold text-brandNavy text-sm">Chess Tournaments</p>
+                <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                    <i class="fa-solid fa-chess-knight text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-bold text-brandNavy text-xs sm:text-sm">Chess Tournaments</p>
                 </div>
-                <div class="p-4 flex flex-col items-center col-span-2 md:col-span-1">
-                    <i class="fa-regular fa-lightbulb text-brandOrange text-4xl mb-3"></i>
-                    <p class="font-bold text-brandNavy text-sm">Other STEM Opportunity</p>
+                <div class="p-4 flex flex-col items-center justify-center col-span-2 md:col-span-1 bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                    <i class="fa-regular fa-lightbulb text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-bold text-brandNavy text-xs sm:text-sm">Other STEM Opportunities</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-12 px-4 max-w-6xl mx-auto">
-        <div class="text-center mb-10">
-            <span class="bg-brandNavy text-white py-2 px-6 font-bold tracking-wider uppercase rounded shadow text-lg">
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="bg-brandNavy text-white py-2.5 px-6 font-bold tracking-wider uppercase rounded-full shadow-sm text-sm md:text-base">
                 Meet Our Instructors & Team!
             </span>
         </div>
         
-        <div class="mb-12">
-            <h3 class="text-center text-2xl font-black text-brandNavy uppercase tracking-wide mb-6 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
+        <div class="mb-16">
+            <h3 class="text-center text-lg font-black text-brandNavy uppercase tracking-widest mb-8 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
                 Co-Founders
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-                <div class="bg-white border-2 border-brandOrange rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center">
-                    <div class="w-32 h-32 rounded-full border-4 border-brandOrange overflow-hidden mb-4 shadow-inner">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:border-brandOrange/50 transition-all duration-300 flex flex-col items-center group">
+                    <div class="w-32 h-32 rounded-full border-4 border-slate-50 group-hover:border-brandOrange/30 overflow-hidden mb-4 shadow-md transition-all duration-300 transform group-hover:scale-105">
                         <img src="ClaireDing.jpg" alt="Claire Ding" class="w-full h-full object-cover brightness-125" style="object-position: 50% 20%;">
                     </div>
-                    <i class="fa-solid fa-book-open text-brandOrange text-3xl mb-2"></i>
-                    <h4 class="text-xl font-bold text-brandNavy uppercase">Claire Ding</h4>
+                    <i class="fa-solid fa-book-open text-brandOrange/70 text-2xl mb-2"></i>
+                    <h4 class="text-xl font-bold text-brandNavy uppercase tracking-wide">Claire Ding</h4>
                     <p class="text-xs text-brandOrange font-bold mb-1">WT, Class of 2028</p>
-                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider mb-4">Co-Founder</span>
-                    <ul class="text-sm text-left text-gray-600 space-y-2 list-disc pl-5 self-start">
+                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-4">Co-Founder</span>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5 self-start mt-auto w-full">
                         <li>SciOly Regional 1st Place and State Top Medalist</li>
                         <li>PRSEF Award Winner</li>
                         <li>Scholastic Writing Gold Key</li>
                     </ul>
                 </div>
 
-                <div class="bg-white border-2 border-brandOrange rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center">
-                    <div class="w-32 h-32 rounded-full border-4 border-brandOrange overflow-hidden mb-4 shadow-inner">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:border-brandOrange/50 transition-all duration-300 flex flex-col items-center group">
+                    <div class="w-32 h-32 rounded-full border-4 border-slate-50 group-hover:border-brandOrange/30 overflow-hidden mb-4 shadow-md transition-all duration-300 transform group-hover:scale-105">
                         <img src="ErickZhao.JPG" alt="Erick Zhao" class="w-full h-full object-cover" style="object-position: 50% 25%;">
                     </div>
-                    <i class="fa-solid fa-chess-king text-brandOrange text-3xl mb-2"></i>
-                    <h4 class="text-xl font-bold text-brandNavy uppercase">Erick Zhao</h4>
+                    <i class="fa-solid fa-chess-king text-brandOrange/70 text-2xl mb-2"></i>
+                    <h4 class="text-xl font-bold text-brandNavy uppercase tracking-wide">Erick Zhao</h4>
                     <p class="text-xs text-brandOrange font-bold mb-1">WT, Class of 2027</p>
-                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider mb-4">Co-Founder</span>
-                    <ul class="text-sm text-left text-gray-600 space-y-2 list-disc pl-5 self-start">
+                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-4">Co-Founder</span>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5 self-start mt-auto w-full">
                         <li>US Chess All-America Team</li>
                         <li>9x USCF National Grade Champion</li>
                         <li>Three-time AIME qualifier</li>
                     </ul>
                 </div>
 
-                <div class="bg-white border-2 border-brandOrange rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center">
-                    <div class="w-32 h-32 rounded-full border-4 border-brandOrange overflow-hidden mb-4 shadow-inner">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:border-brandOrange/50 transition-all duration-300 flex flex-col items-center group">
+                    <div class="w-32 h-32 rounded-full border-4 border-slate-50 group-hover:border-brandOrange/30 overflow-hidden mb-4 shadow-md transition-all duration-300 transform group-hover:scale-105">
                         <img src="YuantaoTang.PNG" alt="Yuantao Tang" class="w-full h-full object-cover">
                     </div>
-                    <i class="fa-solid fa-code text-brandOrange text-3xl mb-2"></i>
-                    <h4 class="text-xl font-bold text-brandNavy uppercase">Yuantao Tang</h4>
+                    <i class="fa-solid fa-code text-brandOrange/70 text-2xl mb-2"></i>
+                    <h4 class="text-xl font-bold text-brandNavy uppercase tracking-wide">Yuantao Tang</h4>
                     <p class="text-xs text-brandOrange font-bold mb-1">NA, Class of 2028</p>
-                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider mb-4">Co-Founder</span>
-                    <ul class="text-sm text-left text-gray-600 space-y-2 list-disc pl-5 self-start">
+                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-4">Co-Founder</span>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5 self-start mt-auto w-full">
                         <li>USACO Gold Division</li>
                         <li>ACSL Senior 5 Contest 1st Place</li>
                         <li>Three-time AIME qualifier</li>
@@ -132,29 +140,33 @@
         </div>
 
         <div>
-            <h3 class="text-center text-2xl font-black text-brandNavy uppercase tracking-wide mb-6 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
+            <h3 class="text-center text-lg font-black text-brandNavy uppercase tracking-widest mb-8 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
                 Advisors
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
-                <div class="bg-white border-2 border-brandOrange rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center">
-                    <i class="fa-solid fa-graduation-cap text-brandOrange text-3xl mb-2"></i>
-                    <h4 class="text-xl font-bold text-brandNavy uppercase">Jason Liu</h4>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:border-brandOrange/50 transition-all duration-300 flex flex-col items-center group">
+                    <div class="bg-orange-50 p-3 rounded-full text-brandOrange mb-3 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy uppercase tracking-wide">Jason Liu</h4>
                     <p class="text-xs text-brandOrange font-bold mb-1">NA, Class of 2026</p>
-                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider mb-4">Advisor</span>
-                    <ul class="text-sm text-left text-gray-600 space-y-2 list-disc pl-5 self-start">
-                        <li>MIT, Class of 2028</li>
+                    <span class="inline-block bg-slate-100 text-brandNavy text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-4">Advisor</span>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5 self-start mt-auto w-full">
+                        <li class="font-semibold text-brandNavy">MIT, Class of 2030</li>
                         <li>Silver medal in IOL 2025 and Top 1 seed to represent USA for IOL 2026</li>
                         <li>Two-time USAJMO qualifier</li>
                     </ul>
                 </div>
 
-                <div class="bg-white border-2 border-brandOrange rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center">
-                    <i class="fa-solid fa-graduation-cap text-brandOrange text-3xl mb-2"></i>
-                    <h4 class="text-xl font-bold text-brandNavy uppercase">Andrew Feng</h4>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:border-brandOrange/50 transition-all duration-300 flex flex-col items-center group">
+                    <div class="bg-orange-50 p-3 rounded-full text-brandOrange mb-3 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy uppercase tracking-wide">Andrew Feng</h4>
                     <p class="text-xs text-brandOrange font-bold mb-1">NA, Class of 2026</p>
-                    <span class="inline-block bg-brandNavy text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider mb-4">Advisor</span>
-                    <ul class="text-sm text-left text-gray-600 space-y-2 list-disc pl-5 self-start">
-                        <li>CMU, Class of 2028</li>
+                    <span class="inline-block bg-slate-100 text-brandNavy text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-4">Advisor</span>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5 self-start mt-auto w-full">
+                        <li class="font-semibold text-brandNavy">CMU, Class of 2030</li>
                         <li>Four-time AIME qualifier and Math Kangaroo National Winner</li>
                         <li>Science Bowl national team</li>
                     </ul>
@@ -163,75 +175,88 @@
         </div>
     </section>
 
-    <section class="py-12 bg-gray-100 px-4">
+    <section class="py-16 bg-slate-100/60 px-4">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200">
-                <div class="bg-brandOrange text-white text-center py-3 font-bold uppercase tracking-wider text-lg">
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
+                <div class="bg-brandOrange text-white text-center py-3.5 font-bold uppercase tracking-wider text-base shadow-sm">
                     Event Details
                 </div>
-                <div class="p-6 space-y-4">
+                <div class="p-6 sm:p-8 space-y-5 flex-grow">
                     <div class="flex items-start">
-                        <i class="fa-regular fa-calendar-days text-brandOrange text-xl w-8 mt-1"></i>
+                        <div class="bg-orange-50 p-2 rounded-lg mr-4 text-brandOrange flex items-center justify-center w-10 h-10 shrink-0">
+                            <i class="fa-regular fa-calendar-days text-lg"></i>
+                        </div>
                         <div>
-                            <p class="text-xs uppercase text-gray-400 font-bold">Date</p>
-                            <p class="text-base font-semibold text-brandNavy">Saturday, June 6, 2026</p>
+                            <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Date</p>
+                            <p class="text-base sm:text-lg font-bold text-brandNavy">Saturday, June 6, 2026</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <i class="fa-regular fa-clock text-brandOrange text-xl w-8 mt-1"></i>
+                        <div class="bg-orange-50 p-2 rounded-lg mr-4 text-brandOrange flex items-center justify-center w-10 h-10 shrink-0">
+                            <i class="fa-regular fa-clock text-lg"></i>
+                        </div>
                         <div>
-                            <p class="text-xs uppercase text-gray-400 font-bold">Time</p>
-                            <p class="text-base font-semibold text-brandNavy">1:30PM – 3:30PM</p>
+                            <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Time</p>
+                            <p class="text-base sm:text-lg font-bold text-brandNavy">1:30 PM – 3:30 PM</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <i class="fa-solid fa-location-dot text-brandOrange text-xl w-8 mt-1"></i>
+                        <div class="bg-orange-50 p-2 rounded-lg mr-4 text-brandOrange flex items-center justify-center w-10 h-10 shrink-0">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                        </div>
                         <div>
-                            <p class="text-xs uppercase text-gray-400 font-bold">Location</p>
-                            <p class="text-base font-semibold text-brandNavy">Northland Public Library</p>
-                            <p class="text-sm text-gray-600">Room 148-1&2</p>
+                            <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Location</p>
+                            <p class="text-base sm:text-lg font-bold text-brandNavy">Northland Public Library</p>
+                            <p class="text-sm text-slate-600 bg-slate-50 inline-block px-2.5 py-0.5 rounded border border-slate-200 mt-1">Room 148-1 & 2</p>
                         </div>
                     </div>
-                    <div class="pt-4 border-t border-gray-100 text-center">
-                        <span class="bg-brandOrange text-white font-black text-lg px-6 py-2 rounded-full inline-block uppercase tracking-wider animate-pulse">
-                            Free Admission!
-                        </span>
-                        <p class="text-sm text-brandNavy font-medium mt-2">All are welcome!</p>
-                    </div>
+                </div>
+                <div class="p-6 bg-slate-50 border-t border-slate-100 text-center">
+                    <span class="bg-brandOrange text-white font-black text-sm px-6 py-2 rounded-full inline-block uppercase tracking-wider shadow-sm animate-pulse">
+                        Free Admission!
+                    </span>
+                    <p class="text-xs sm:text-sm text-brandNavy font-semibold mt-2.5 tracking-wide">All families and students are welcome!</p>
                 </div>
             </div>
 
-            <div class="bg-brandNavy text-white rounded-2xl shadow-md overflow-hidden p-6 flex flex-col justify-between text-center border border-brandNavy">
+            <div class="bg-brandNavy text-white rounded-2xl shadow-md overflow-hidden p-6 sm:p-8 flex flex-col justify-between text-center border border-brandNavy relative">
+                <div class="absolute -right-12 -top-12 w-40 h-40 bg-brandOrange/10 rounded-full blur-2xl pointer-events-none"></div>
+                
                 <div>
-                    <h3 class="text-xl font-bold uppercase tracking-wider mb-2 text-brandOrange">RSVP</h3>
-                    <p class="text-sm font-light uppercase tracking-widest mb-6">(Strongly Encouraged)</p>
-                    <p class="text-lg font-medium mb-6">Use the link below to reserve your spot.</p>
+                    <h3 class="text-2xl font-black uppercase tracking-wider mb-1 text-brandOrange">RSVP</h3>
+                    <p class="text-xs font-medium uppercase tracking-widest text-slate-300 mb-6">(Strongly Encouraged)</p>
+                    <p class="text-base sm:text-lg text-slate-100 font-medium leading-relaxed mb-6">
+                        Please save your spot early to help us accurately budget for attendee materials and rewards.
+                    </p>
                 </div>
-                <div>
-                    <a href="https://forms.gle/Vse5MTr8NkmctXyt5" target="_blank" class="block w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl shadow transition duration-200 text-center truncate mb-4">
+                <div class="mt-auto">
+                    <a href="https://forms.gle/Vse5MTr8NkmctXyt5" target="_blank" class="block w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-bold py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-center truncate mb-3 transform hover:-translate-y-0.5 active:translate-y-0">
                         <i class="fa-solid fa-paper-plane mr-2"></i> Register via Google Forms
                     </a>
-                    <p class="text-xs text-gray-300 italic">Early RSVP helps us prepare materials and rewards!</p>
+                    <p class="text-xs text-slate-300 italic">Takes less than a minute to complete!</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-brandNavy text-white py-8 px-4 text-center">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <div class="font-bold tracking-wider uppercase text-brandOrange">
-                <i class="fa-regular fa-circle-question mr-1"></i> Questions? Contact Us!
+    <footer class="bg-brandNavy text-white py-12 px-4 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+            <div class="font-bold tracking-wider uppercase text-brandOrange flex items-center gap-2">
+                <i class="fa-regular fa-circle-question text-base"></i> Have Questions? Contact Us!
             </div>
-            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
-                <a href="mailto:info@3riverstem.org" class="hover:text-brandOrange transition-colors">
-                    <i class="fa-regular fa-envelope mr-2"></i>info@3riverstem.org
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center text-center">
+                <a href="mailto:info@3riverstem.org" class="hover:text-brandOrange transition-colors flex items-center gap-2 font-medium">
+                    <i class="fa-regular fa-envelope text-brandOrange"></i>info@3riverstem.org
                 </a>
-                <a href="https://www.3riverstem.org" target="_blank" class="hover:text-brandOrange transition-colors">
-                    <i class="fa-solid fa-globe mr-2"></i>www.3riverstem.org
+                <a href="https://www.3riverstem.org" target="_blank" class="hover:text-brandOrange transition-colors flex items-center gap-2 font-medium border-t md:border-t-0 pt-2 md:pt-0 border-slate-800 w-full sm:w-auto">
+                    <i class="fa-solid fa-globe text-brandOrange"></i>www.3riverstem.org
                 </a>
             </div>
+        </div>
+        <div class="max-w-4xl mx-auto text-center mt-8 pt-6 border-t border-slate-800/40 text-xs text-slate-400">
+            &copy; 2026 Three Rivers STEM & Beyond. All rights reserved.
         </div>
     </footer>
 
