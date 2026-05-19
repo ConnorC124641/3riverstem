@@ -242,18 +242,32 @@
             </div>
         </div>
         
-       <div class="max-w-4xl mx-auto text-center mt-8 pt-6 border-t border-slate-800/40 text-xs text-slate-400">
+      <div class="max-w-4xl mx-auto text-center mt-8 pt-6 border-t border-slate-800/40 text-xs text-slate-400">
             <div>&copy; 2026 Three Rivers STEM & Beyond. All rights reserved.</div>
             
-          <div class="max-w-4xl mx-auto text-center mt-8 pt-6 border-t border-slate-800/40 text-xs text-slate-400">
-            <div>&copy; 2026 Three Rivers STEM & Beyond. All rights reserved.</div>
-            
-            <p class="mt-4 flex items-center justify-center gap-2 text-[11px] text-slate-500">
+            <p class="mt-3 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
                 <i class="fa-solid fa-eye text-slate-600"></i> 
-                Page Views: 
-                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F3riverstem.org&count_bg=%23FF4500&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false" alt="Visitor Count" class="inline-block align-middle" />
+                Page Views: <span id="visitor-count" class="font-bold text-brandOrange">...</span>
             </p>
         </div>
     </footer>
+
+    <script>
+        async function loadCount() {
+            try {
+                // Unique key based on your domain to store the number
+                const res = await fetch('https://counter.kodem.cc/api/v1/3riverstem-info/hit');
+                const data = await res.json();
+                if(data && data.count) {
+                    document.getElementById('visitor-count').innerText = data.count.toLocaleString();
+                }
+            } catch(e) {
+                // If it fails, safely default to a placeholder rather than breaking
+                document.getElementById('visitor-count').innerText = "1";
+            }
+        }
+        document.addEventListener("DOMContentLoaded", loadCount);
+    </script>
+
 </body>
 </html>
