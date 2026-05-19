@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Competitions - Three Rivers STEM & Beyond</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0F2C59',
+                        brandOrange: '#FF4500',
+                        brandOrangeHover: '#E03D00',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+    <nav class="bg-white border-b border-slate-200 py-4 px-4 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-brandNavy hover:text-brandOrange font-bold transition-colors duration-200 group text-sm md:text-base">
+                <i class="fa-solid fa-arrow-left transition-transform duration-200 group-hover:-translate-x-1"></i>
+                Back to Overview
+            </a>
+            <span class="text-xs uppercase tracking-widest font-black text-brandOrange">— Math Resources —</span>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+        
+        <header class="text-center max-w-3xl mx-auto">
+            <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-brandOrange mx-auto mb-4 border border-brandOrange/20 shadow-sm">
+                <i class="fa-solid fa-calculator text-3xl"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-black text-brandNavy uppercase tracking-tight mb-4">
+                Mathematics Pathways & Competitions
+            </h1>
+            <p class="text-slate-600 font-medium text-base md:text-lg">
+                Explore premier competitive math pipelines from elementary foundation stages up to elite invitational international tracks.
+            </p>
+        </header>
+
+        <section class="bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden">
+            <div class="border-l-8 border-brandOrange bg-brandNavy text-white py-4 px-6 flex items-center gap-3">
+                <i class="fa-solid fa-ranking-star text-brandOrange text-xl"></i>
+                <h2 class="text-lg md:text-xl font-black uppercase tracking-wider">MAA Competition Pipeline</h2>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 border-b border-slate-200 text-brandNavy font-bold text-xs uppercase tracking-wider">
+                            <th class="py-4 px-6">Competition Tier</th>
+                            <th class="py-4 px-4">Target Grade</th>
+                            <th class="py-4 px-4">Month</th>
+                            <th class="py-4 px-6">Qualification / Note</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/amc8" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">AMC 8 <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Grades 6–8</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">January</td>
+                            <td class="py-4 px-6 text-slate-600">Middle school foundation; non-invitational</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/amc10" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">AMC 10 <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Grades 9–10</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">November</td>
+                            <td class="py-4 px-6 text-slate-600">Qualification path for AIME</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/amc12" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">AMC 12 <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Grades 11–12</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">November</td>
+                            <td class="py-4 px-6 text-slate-600">Qualification path for AIME</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/aime" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">AIME <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Qualified Scorers</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">February</td>
+                            <td class="py-4 px-6 text-slate-600">American Invitational Mathematics Examination</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/usamo" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">USAJMO <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Top AMC 10 + AIME</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">March</td>
+                            <td class="py-4 px-6 text-slate-600">Junior Mathematical Olympiad (Proof-based)</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://maa.org/amc/usamo" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">USAMO <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Top AMC 12 + AIME</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">March</td>
+                            <td class="py-4 px-6 text-slate-600">United States of America Mathematical Olympiad</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold text-brandNavy">MOP</td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">Elite Finalists</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">Summer</td>
+                            <td class="py-4 px-6 text-slate-600">Mathematical Olympiad Program (Invitational Camp)</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold text-brandNavy">IMO</td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">USA Team</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">July</td>
+                            <td class="py-4 px-6 text-slate-600">International Math Olympiad Team (6 members)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden">
+            <div class="border-l-8 border-brandOrange bg-brandNavy text-white py-4 px-6 flex items-center gap-3">
+                <i class="fa-solid fa-trophy text-brandOrange text-xl"></i>
+                <h2 class="text-lg md:text-xl font-black uppercase tracking-wider">Major National & International Competitions</h2>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 border-b border-slate-200 text-brandNavy font-bold text-xs uppercase tracking-wider">
+                            <th class="py-4 px-6">Competition Name</th>
+                            <th class="py-4 px-4">Grades</th>
+                            <th class="py-4 px-4">Typical Date</th>
+                            <th class="py-4 px-4">Hosts</th>
+                            <th class="py-4 px-6">Formats</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://www.mathcounts.org" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">MathCounts <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">6–8</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">Feb–May</td>
+                            <td class="py-4 px-4 text-slate-600">MATHCOUNTS Foundation</td>
+                            <td class="py-4 px-6 text-slate-600">School, Chapter, State, National rounds</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://www.mathleague.com" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">Math League <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">4–12</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">Oct–Mar</td>
+                            <td class="py-4 px-4 text-slate-600">Math League</td>
+                            <td class="py-4 px-6 text-slate-600">Regular monthly contests; school-based</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://mathkangaroo.org" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">Math Kangaroo <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">1–12</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">March</td>
+                            <td class="py-4 px-4 text-slate-600">Math Kangaroo USA</td>
+                            <td class="py-4 px-6 text-slate-600">International multiple choice competition</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://purplecomet.org" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">Purple Comet! <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">6–12</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">April</td>
+                            <td class="py-4 px-4 text-slate-600">AwesomeMath</td>
+                            <td class="py-4 px-6 text-slate-600">Online team competition (AwesomeMath)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://www.moems.org" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">MOEMS <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">4–8</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">Nov–Mar</td>
+                            <td class="py-4 px-4 text-slate-600">MOEMS</td>
+                            <td class="py-4 px-6 text-slate-600">Mathematical Olympiads for Elementary & Middle Schools</td>
+                        </tr>
+                        <tr class="bg-slate-50/40 hover:bg-slate-50/80 transition-colors">
+                            <td class="py-4 px-6 font-bold"><a href="https://www.mathcon.org" target="_blank" class="text-brandOrange hover:underline flex items-center gap-1.5">MathCON <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i></a></td>
+                            <td class="py-4 px-4 font-semibold text-slate-600">4–12</td>
+                            <td class="py-4 px-4 font-medium text-slate-500">Jan–Mar, May</td>
+                            <td class="py-4 px-4 text-slate-600">MathCON Organization</td>
+                            <td class="py-4 px-6 text-slate-600">MathCON Organization</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brandNavy text-white/60 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            &copy; 2026 Three Rivers STEM & Beyond. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
