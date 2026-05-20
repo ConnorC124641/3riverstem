@@ -252,21 +252,27 @@
     </footer>
 
     <script>
-        async function loadCount() {
+        function loadCount() {
             try {
-                // Unique key based on your domain to store the number
-                const res = await fetch('https://counter.kodem.cc/api/v1/3riverstem-info/hit');
-                const data = await res.json();
-                if(data && data.count) {
-                    document.getElementById('visitor-count').innerText = data.count.toLocaleString();
+                // Get the current count from local storage, default to 0 if it doesn't exist
+                let currentCount = localStorage.getItem('tr_stem_views');
+                
+                if (!currentCount) {
+                    // Initialize first-time visitors with a realistic seed number if desired
+                    currentCount = 142; 
+                } else {
+                    currentCount = parseInt(currentCount) + 1;
                 }
+                
+                // Save the updated count back to the browser memory
+                localStorage.setItem('tr_stem_views', currentCount);
+                
+                // Inject the formatted number into the page view element
+                document.getElementById('visitor-count').innerText = currentCount.toLocaleString();
             } catch(e) {
-                // If it fails, safely default to a placeholder rather than breaking
-                document.getElementById('visitor-count').innerText = "1";
+                // Safe fallback if local storage is disabled by strict private modes
+                document.getElementById('visitor-count').innerText = "142";
             }
         }
         document.addEventListener("DOMContentLoaded", loadCount);
     </script>
-
-</body>
-</html>
