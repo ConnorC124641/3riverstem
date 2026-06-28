@@ -35,9 +35,9 @@
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-brandNavy tracking-tight mb-6 leading-tight">
                 STEM <span class="text-brandOrange">AND</span> CHESS ENRICHMENT
             </h1>
-            <div class="bg-slate-400 text-white py-2.5 px-8 inline-block font-bold text-lg md:text-xl uppercase tracking-wider rounded-lg shadow-md mb-8">
-                Session Concluded
-            </div>
+         <div class="bg-brandOrange text-white py-2.5 px-8 inline-block font-bold text-lg md:text-xl uppercase tracking-wider rounded-lg shadow-md mb-8">
+    Ongoing Math Workshop!
+</div>
             
             <div class="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-bold text-brandNavy uppercase tracking-widest mb-8">
                 <span>Explore</span> <span class="text-brandOrange/40">•</span> <span>Learn</span> <span class="text-brandOrange/40">•</span> <span>Compete</span> <span class="text-brandOrange/40">•</span> <span>Grow</span>
@@ -56,19 +56,19 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
                 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div onclick="openLightbox('844.jpg')" class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group cursor-pointer">
                         <img src="844.jpg" alt="Three Rivers STEM Past Events" class="w-full h-full aspect-[4/3] object-cover object-center group-hover:scale-[1.02] transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
                             <p class="text-white text-xs font-semibold tracking-wide flex items-center gap-1.5">
-                                <i class="fa-solid fa-camera text-brandOrange"></i> Community Workshops
+                                <i class="fa-solid fa-camera text-brandOrange"></i> Community Workshops <span class="text-[10px] opacity-60 font-normal ml-1">(Click to view)</span>
                             </p>
                         </div>
                     </div>
-                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div onclick="openLightbox('mathflyer3riverstem.PNG')" class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group cursor-pointer">
                         <img src="mathflyer3riverstem.PNG" alt="Math Competition Workshop Flyer" class="w-full h-full aspect-[4/3] object-cover object-top group-hover:scale-[1.02] transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
                             <p class="text-white text-xs font-semibold tracking-wide flex items-center gap-1.5">
-                                <i class="fa-solid fa-file-invoice text-brandOrange"></i> Math Workshop Flyer
+                                <i class="fa-solid fa-file-invoice text-brandOrange"></i> Math Workshop Flyer <span class="text-[10px] opacity-60 font-normal ml-1">(Click to view)</span>
                             </p>
                         </div>
                     </div>
@@ -283,7 +283,7 @@
                         <div class="bg-orange-50/50 border border-brandOrange/10 rounded-xl p-4 text-center">
                             <span class="text-xs font-bold uppercase text-brandOrange tracking-wide block mb-1">Registration Closed</span>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                This live forum has concluded. Complete session milestone summaries and interactive slide panels remain publicly archived.
+                                This live forum has concluded. Complete session milestone summaries and interactive slide panels remain publicly archived. Now, join the math program!
                             </p>
                         </div>
                     </div>
@@ -301,7 +301,7 @@
     <footer class="bg-brandNavy text-white py-12 px-4 border-t border-slate-800">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
             <div class="font-bold tracking-wider uppercase text-brandOrange flex items-center gap-2">
-                <i class="fa-regular fa-circle-question text-base"></i> Have Questions? Contact Us!
+                <i class="fa-regular fa-circle-question text-base"></i> Questions or Concerns? Contact Us!
             </div>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center text-center">
                 <a href="mailto:info@3riverstem.org" class="hover:text-brandOrange transition-colors flex items-center gap-2 font-medium">
@@ -323,7 +323,43 @@
         </div>
     </footer>
 
+    <div id="imageLightbox" onclick="closeLightbox()" class="fixed inset-0 bg-slate-950/90 z-[100] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-8 backdrop-blur-sm cursor-zoom-out">
+        <div class="absolute top-4 right-4 text-white text-3xl font-light cursor-pointer hover:text-brandOrange p-2" onclick="closeLightbox()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <img id="lightboxImage" src="" alt="Expanded View" class="max-w-full max-h-[85vh] md:max-h-[90vh] object-contain rounded-lg shadow-2xl border border-white/10 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
     <script>
+        // Lightbox Expansion Controls
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('imageLightbox');
+            const targetImg = document.getElementById('lightboxImage');
+            
+            targetImg.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            
+            // Allow slight delay for CSS animations to kick in fluidly
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                targetImg.classList.remove('scale-95');
+            }, 20);
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('imageLightbox');
+            const targetImg = document.getElementById('lightboxImage');
+            
+            lightbox.classList.add('opacity-0');
+            targetImg.classList.add('scale-95');
+            
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                targetImg.src = "";
+            }, 300);
+        }
+
+        // Local Storage Counter Script
         function loadCount() {
             try {
                 let currentCount = localStorage.getItem('tr_stem_views');
