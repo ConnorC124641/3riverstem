@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events — Three Rivers STEM & Beyond</title>
+    <title>Past Events — Three Rivers STEM & Beyond</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,7 +28,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="bg-white border-b-4 border-brandOrange py-12 px-4 text-center shadow-sm relative overflow-hidden">
         <div class="absolute top-4 left-4 z-20">
             <a href="index.html" class="block opacity-90 hover:opacity-100 transition-opacity">
@@ -39,10 +39,10 @@
         <div class="max-w-4xl mx-auto relative z-10">
             <p class="text-brandOrange font-bold tracking-widest text-sm uppercase mb-2">— Three Rivers STEM & Beyond —</p>
             <h1 class="text-4xl sm:text-5xl font-black text-brandNavy tracking-tight mb-4 uppercase">
-                Upcoming Events
+                Past Events
             </h1>
             <p class="text-base sm:text-lg text-slate-600 font-medium max-w-2xl mx-auto">
-                Join us for our upcoming hands-on STEM workshops and interactive sessions!
+                Highlights and recaps from our recent STEM workshops, summer camp sessions, and interactive learning events.
             </p>
             
             <div class="mt-6">
@@ -53,24 +53,88 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto py-16 px-4 flex-grow text-center">
-        <div class="bg-white rounded-2xl border border-slate-200 p-12 shadow-sm space-y-4">
-            <div class="w-16 h-16 bg-orange-100 text-brandOrange rounded-full flex items-center justify-center mx-auto text-2xl">
-                <i class="fa-solid fa-calendar-days"></i>
+    <!-- Past Events List -->
+    <main class="max-w-5xl mx-auto py-12 px-4 space-y-10 flex-grow">
+
+        <!-- Event 1: In-Person Workshop & Chess -->
+        <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-6 p-6 items-center">
+            <div class="md:col-span-5">
+                <img src="image8.jpeg" alt="In-Person Workshop and Chess Tournament" class="w-full h-auto rounded-xl object-cover border border-slate-100 shadow-xs">
             </div>
-            <h2 class="text-2xl font-bold text-brandNavy">New Events Coming Soon</h2>
-            <p class="text-slate-600 max-w-md mx-auto text-sm">
-                We are currently scheduling our next round of workshops and programs. Check back soon or contact us to stay updated!
-            </p>
-        </div>
+            <div class="md:col-span-7 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-1 rounded border border-brandOrange/10 inline-block">
+                    August 11, 2026
+                </span>
+                <h2 class="text-2xl font-black text-brandNavy">
+                    In-Person STEM Workshop & Chess Tournament
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Our interactive community session featured hands-on biology lessons with cell cookie creation, interactive presentations, and an open chess tournament. Students applied creative problem-solving while engaging with peers.
+                </p>
+            </div>
+        </article>
+
+        <!-- Event 2: Python Introduction -->
+        <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-6 p-6 items-center">
+            <div class="md:col-span-5 md:order-2">
+                <img src="image2.png" alt="Introduction to Python Session" class="w-full h-auto rounded-xl object-cover border border-slate-100 shadow-xs">
+            </div>
+            <div class="md:col-span-7 md:order-1 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-1 rounded border border-brandOrange/10 inline-block">
+                    August 12, 2026
+                </span>
+                <h2 class="text-2xl font-black text-brandNavy">
+                    Summer Camp Day 2: Introduction to Python
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    An entry-level coding session introducing fundamental programming concepts, syntax, variables, print statements, and logical conditionals using interactive code editors.
+                </p>
+            </div>
+        </article>
+
+        <!-- Event 3: Math Triangles & Evolution -->
+        <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-6 p-6 items-center">
+            <div class="md:col-span-5">
+                <img src="image0.jpeg" alt="Math Triangles and Evolution Workshop" class="w-full h-auto rounded-xl object-cover border border-slate-100 shadow-xs">
+            </div>
+            <div class="md:col-span-7 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-1 rounded border border-brandOrange/10 inline-block">
+                    August 13, 2026
+                </span>
+                <h2 class="text-2xl font-black text-brandNavy">
+                    Summer Camp Day 3: Geometry & Evolutionary Biology
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    A dual-topic session covering geometric principles of triangles using GeoGebra alongside biology discussions comparing theories of evolution, natural selection, and adaptation.
+                </p>
+            </div>
+        </article>
+
+        <!-- Event 4: Chemistry & Coding Game -->
+        <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-6 p-6 items-center">
+            <div class="md:col-span-5 md:order-2">
+                <img src="image1.jpg" alt="Chemistry and Coding Game Final Day" class="w-full h-auto rounded-xl object-cover border border-slate-100 shadow-xs">
+            </div>
+            <div class="md:col-span-7 md:order-1 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-1 rounded border border-brandOrange/10 inline-block">
+                    August 14, 2026
+                </span>
+                <h2 class="text-2xl font-black text-brandNavy">
+                    Summer Camp Day 5: Chemistry & Coding Game Competition
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    The camp concluded with lessons on the states of matter and plasma, followed by an interactive coding and chemistry review competition on Gimkit.
+                </p>
+            </div>
+        </article>
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-brandNavy text-white py-8 px-4 border-t border-slate-800 mt-auto">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-center md:text-left">
             <div class="font-bold tracking-wider uppercase text-brandOrange flex items-center gap-2">
-                <i class="fa-regular fa-envelope text-base"></i> Contact Us
+                <i class="fa-regular fa-envelope text-base"></i> Questions? Contact Us
             </div>
             <div class="flex flex-col sm:flex-row gap-4 items-center">
                 <a href="mailto:info@3riverstem.org" class="hover:text-brandOrange transition-colors">info@3riverstem.org</a>
