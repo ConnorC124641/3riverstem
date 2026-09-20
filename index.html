@@ -28,20 +28,22 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
+    <!-- Header Section -->
+    <header class="bg-white border-b-4 border-brandOrange py-12 px-4 text-center shadow-sm relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.02] pointer-events-none bg-[radial-gradient(#0F2C59_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
         <div class="max-w-4xl mx-auto relative z-10">
+            <!-- Restored Option1 Logo -->
+            <div class="mb-6 flex justify-center">
+                <a href="index.html" class="block opacity-95 hover:opacity-100 transition-opacity">
+                    <img src="Option1_LOGO.png" alt="Three Rivers STEM Logo" class="h-28 sm:h-36 w-auto object-contain">
+                </a>
+            </div>
+
             <p class="text-brandOrange font-bold tracking-widest text-sm md:text-base uppercase mb-3">— Three Rivers STEM & Beyond —</p>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-brandNavy tracking-tight mb-6 leading-tight">
                 STEM <span class="text-brandOrange">AND</span> CHESS ENRICHMENT
             </h1>
-            
-          <div class="mb-4 flex justify-center">
-                <img src="summercamp.png" alt="Summer Camp" class="max-w-[270px] md:max-w-[390px] w-full h-auto object-contain rounded-lg">
-            </div>
-
-            <div class="bg-brandOrange text-white py-2.5 px-8 inline-block font-bold text-lg md:text-xl uppercase tracking-wider rounded-lg shadow-md mb-8">
-                Upcoming Summer Camp!
-            </div>
             
             <div class="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-bold text-brandNavy uppercase tracking-widest mb-8">
                 <span>Explore</span> <span class="text-brandOrange/40">•</span> <span>Learn</span> <span class="text-brandOrange/40">•</span> <span>Compete</span> <span class="text-brandOrange/40">•</span> <span>Grow</span>
@@ -54,59 +56,35 @@
         </div>
     </header>
 
+    <!-- Our Journey Section -->
     <section class="py-12 bg-white px-4 border-b border-slate-100">
-        <div class="max-w-5xl mx-auto space-y-12">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                
-                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div onclick="openLightbox('844.jpg')" class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group cursor-pointer">
-                        <img src="844.jpg" alt="Three Rivers STEM Past Events" class="w-full h-full aspect-[4/3] object-cover object-center group-hover:scale-[1.02] transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
-                            <p class="text-white text-xs font-semibold tracking-wide flex items-center gap-1.5">
-                                <i class="fa-solid fa-camera text-brandOrange"></i> Community Workshops <span class="text-[10px] opacity-60 font-normal ml-1">(Click to view)</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div onclick="openLightbox('mathflyer3riverstem.PNG')" class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-md border border-slate-200 group cursor-pointer">
-                        <img src="mathflyer3riverstem.PNG" alt="Math Competition Workshop Flyer" class="w-full h-full aspect-[4/3] object-cover object-top group-hover:scale-[1.02] transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
-                            <p class="text-white text-xs font-semibold tracking-wide flex items-center gap-1.5">
-                                <i class="fa-solid fa-file-invoice text-brandOrange"></i> Math Workshop Flyer <span class="text-[10px] opacity-60 font-normal ml-1">(Click to view)</span>
-                            </p>
-                        </div>
-                    </div>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="text-center space-y-4">
+                <span class="text-xs font-black tracking-widest uppercase text-brandOrange bg-orange-50 px-3 py-1 rounded-md border border-brandOrange/10 inline-block">
+                    Our Journey
+                </span>
+                <h2 class="text-3xl md:text-4xl font-black text-brandNavy uppercase tracking-tight leading-none">
+                    Empowering Student Achievers
+                </h2>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Through targeted strategy workshops, sample practice panels, and systematic competition roadmaps, we break down complex academic pathways into actionable milestones for local students.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto pt-2">
+                <div class="bg-slate-50/80 border border-slate-200/80 rounded-xl p-5 text-center shadow-xs">
+                    <div class="text-3xl font-black text-brandNavy tracking-tight">100+</div>
+                    <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-1">Students Mentored</div>
                 </div>
-
-                <div class="lg:col-span-5 space-y-6">
-                    <div>
-                        <span class="text-xs font-black tracking-widest uppercase text-brandOrange bg-orange-50 px-2.5 py-1 rounded-md border border-brandOrange/10 inline-block mb-2">
-                            Our Journey
-                        </span>
-                        <h2 class="text-2xl md:text-3xl font-black text-brandNavy uppercase tracking-tight leading-none mb-3">
-                            Empowering Student Achievers
-                        </h2>
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            Through targeted strategy workshops, sample practice panels, and systematic competition roadmaps, we break down complex academic pathways into actionable milestones for local students.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-4">
-                        <div class="bg-slate-50/80 border border-slate-100 rounded-xl p-4 text-center">
-                            <div class="text-2xl font-black text-brandNavy tracking-tight">100+</div>
-                            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Students Mentored</div>
-                        </div>
-                        <div class="bg-slate-50/80 border border-slate-100 rounded-xl p-4 text-center">
-                            <div class="text-2xl font-black text-brandOrange tracking-tight">AIME+</div>
-                            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Qualified Level Track</div>
-                        </div>
-                    </div>
+                <div class="bg-slate-50/80 border border-slate-200/80 rounded-xl p-5 text-center shadow-xs">
+                    <div class="text-3xl font-black text-brandOrange tracking-tight">AIME+</div>
+                    <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-1">Qualified Level Track</div>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- Topics Grid Section -->
     <section class="py-16 bg-slate-100/60 px-4">
         <div class="max-w-5xl mx-auto">
             <h2 class="bg-brandOrange text-white text-center font-bold tracking-wider py-3 px-4 rounded-t-xl text-sm sm:text-base uppercase shadow-sm mb-6">
@@ -115,7 +93,7 @@
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 
                 <div class="p-4 flex flex-col items-center justify-between bg-slate-50/50 rounded-xl border border-slate-200 shadow-sm hover:border-brandOrange transition-all duration-200 group">
-                    <a href="math.html" class="flex flex-col items-center justify-center flex-grow w-full cursor-pointer pb-3">
+                    <a href="math.html" class="flex flex-col items-center justify-center flex-grow w-full cursor-pointer py-2">
                         <i class="fa-solid fa-calculator text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
                         <p class="font-bold text-brandNavy text-xs sm:text-sm group-hover:text-brandOrange transition-colors duration-200 text-center">Math Competitions</p>
                     </a>
@@ -125,27 +103,32 @@
                     <i class="fa-solid fa-code text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
                     <p class="font-bold text-brandNavy text-xs sm:text-sm text-center">Coding</p>
                 </div>
+
                 <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
                     <i class="fa-solid fa-flask text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
                     <p class="font-bold text-brandNavy text-xs sm:text-sm text-center">Science Competitions</p>
                 </div>
+
                 <div class="p-4 flex flex-col items-center justify-center bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
                     <i class="fa-solid fa-chess-knight text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
                     <p class="font-bold text-brandNavy text-xs sm:text-sm text-center">Chess Tournaments</p>
                 </div>
-                <div class="p-4 flex flex-col items-center justify-center col-span-2 md:col-span-1 bg-slate-50/50 rounded-xl border border-slate-100 hover:border-brandOrange/30 hover:bg-white hover:shadow-sm transition-all duration-200 group">
-                    <i class="fa-regular fa-lightbulb text-brandOrange text-3xl sm:text-4xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
-                    <p class="font-bold text-brandNavy text-xs sm:text-sm text-center">Events</p>
-                       <a href="events" 
-                       target="_blank" 
-                       class="w-full bg-brandOrange hover:bg-brandOrangeHover text-white text-[10px] font-extrabold py-2 px-1 rounded-lg uppercase tracking-wider text-center shadow-sm transition-colors duration-150 flex items-center justify-center gap-1">
-                        View Events <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+
+                <!-- Highly Noticeable Events Button Module -->
+                <div class="p-4 flex flex-col items-center justify-center col-span-2 md:col-span-1 bg-gradient-to-b from-orange-50 to-white rounded-xl border-2 border-brandOrange shadow-md hover:shadow-lg transition-all duration-200 group relative">
+                    <i class="fa-regular fa-calendar-check text-brandOrange text-3xl sm:text-4xl mb-2 group-hover:scale-110 transition-transform duration-200"></i>
+                    <p class="font-black text-brandNavy text-xs sm:text-sm text-center mb-2 uppercase tracking-wide">Events</p>
+                    <a href="events.html" 
+                       class="w-full bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-black py-2.5 px-2 rounded-lg uppercase tracking-wider text-center shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-1.5 transform hover:-translate-y-0.5">
+                        View Events <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Instructors & Team Section -->
     <section class="py-16 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-12">
             <span class="bg-brandNavy text-white py-2.5 px-6 font-bold tracking-wider uppercase rounded-full shadow-sm text-sm md:text-base">
@@ -153,6 +136,7 @@
             </span>
         </div>
         
+        <!-- Co-Founders -->
         <div class="mb-16">
             <h3 class="text-center text-lg font-black text-brandNavy uppercase tracking-widest mb-8 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
                 Co-Founders
@@ -205,6 +189,7 @@
             </div>
         </div>
 
+        <!-- Advisors -->
         <div>
             <h3 class="text-center text-lg font-black text-brandNavy uppercase tracking-widest mb-8 border-b-2 border-brandOrange pb-2 max-w-xs mx-auto">
                 Advisors
@@ -241,30 +226,32 @@
         </div>
     </section>
 
+    <!-- Bottom Resources & Event Navigation -->
     <section class="py-16 bg-slate-100/60 px-4">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             
             <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="bg-brandNavy text-white text-center py-3.5 font-bold uppercase tracking-wider text-sm shadow-sm">
-                        Past Event Details
+                        Event Archives & Recaps
                     </div>
                     <div class="p-6 sm:p-8 space-y-5">
                         <div class="flex items-start">
                             <div class="bg-slate-100 p-2 rounded-lg mr-4 text-slate-400 flex items-center justify-center w-10 h-10 shrink-0">
-                                <i class="fa-regular fa-calendar-days text-lg"></i>
+                                <i class="fa-regular fa-calendar-check text-lg text-brandOrange"></i>
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Date held</p>
-                                <p class="text-base font-bold text-slate-500 line-through">Saturday, June 6, 2026</p>
+                                <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Status</p>
+                                <p class="text-base font-bold text-brandNavy">No Upcoming Events Right Now</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Check out highlights and recaps from our recent summer camp sessions!</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div class="bg-slate-100 p-2 rounded-lg mr-4 text-slate-400 flex items-center justify-center w-10 h-10 shrink-0">
-                                <i class="fa-solid fa-location-dot text-lg"></i>
+                                <i class="fa-solid fa-location-dot text-lg text-brandNavy"></i>
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Location</p>
+                                <p class="text-xs uppercase text-slate-400 font-bold tracking-wide">Primary Venue</p>
                                 <p class="text-base font-bold text-brandNavy">Northland Public Library</p>
                                 <p class="text-xs text-slate-500 bg-slate-50 inline-block px-2 py-0.5 rounded border border-slate-200 mt-1">Room 148-1 & 2</p>
                             </div>
@@ -285,9 +272,9 @@
                     </div>
                     <div class="p-6 sm:p-8 space-y-4">
                         <div class="bg-orange-50/50 border border-brandOrange/10 rounded-xl p-4 text-center">
-                            <span class="text-xs font-bold uppercase text-brandOrange tracking-wide block mb-1">Registration Closed</span>
+                            <span class="text-xs font-bold uppercase text-brandOrange tracking-wide block mb-1">Public Archives</span>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                This live forum has concluded. Complete session milestone summaries and interactive slide panels remain publicly archived. Now, join the math program!
+                                Complete session milestone summaries and interactive slide panels remain publicly archived. Explore our resources or join our math program!
                             </p>
                         </div>
                     </div>
@@ -302,6 +289,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-brandNavy text-white py-12 px-4 border-t border-slate-800">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
             <div class="font-bold tracking-wider uppercase text-brandOrange flex items-center gap-2">
@@ -327,42 +315,8 @@
         </div>
     </footer>
 
-    <div id="imageLightbox" onclick="closeLightbox()" class="fixed inset-0 bg-slate-950/90 z-[100] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-8 backdrop-blur-sm cursor-zoom-out">
-        <div class="absolute top-4 right-4 text-white text-3xl font-light cursor-pointer hover:text-brandOrange p-2" onclick="closeLightbox()">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <img id="lightboxImage" src="" alt="Expanded View" class="max-w-full max-h-[85vh] md:max-h-[90vh] object-contain rounded-lg shadow-2xl border border-white/10 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
-    </div>
-
+    <!-- Visitor Counter Script -->
     <script>
-        // Lightbox Expansion Controls
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('imageLightbox');
-            const targetImg = document.getElementById('lightboxImage');
-            
-            targetImg.src = imageSrc;
-            lightbox.classList.remove('hidden');
-            
-            setTimeout(() => {
-                lightbox.classList.remove('opacity-0');
-                targetImg.classList.remove('scale-95');
-            }, 20);
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('imageLightbox');
-            const targetImg = document.getElementById('lightboxImage');
-            
-            lightbox.classList.add('opacity-0');
-            targetImg.classList.add('scale-95');
-            
-            setTimeout(() => {
-                lightbox.classList.add('hidden');
-                targetImg.src = "";
-            }, 300);
-        }
-
-        // Local Storage Counter Script
         function loadCount() {
             try {
                 let currentCount = localStorage.getItem('tr_stem_views');
